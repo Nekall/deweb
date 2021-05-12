@@ -8,9 +8,14 @@ const Navbar = () => {
 
   return(
     <nav className={theme ? 'navbar dark' : 'navbar'} >
-      <div className={theme ? 'typing-demo dark' : 'typing-demo'}>
+
+      <Link className="clean-link" to="/">
+        <div className={theme ? 'typing-demo dark' : 'typing-demo'}>
         deweb
-      </div>
+        </div>
+      </Link>
+
+
       <div className="links-navbar">
         <Link className={theme ? 'link-nav dark' : 'link-nav'} to="/">Home</Link>
         <Link className={theme ? 'link-nav dark' : 'link-nav'} to="/works">Works</Link>

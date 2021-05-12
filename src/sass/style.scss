@@ -50,6 +50,10 @@ body{
   box-shadow: 4px 4px 0px black;
   padding: 10px 20px 10px 20px;
   margin: 10px;
+  transition: 0.2s;
+  &:active{
+    box-shadow: 1px 1px 0px black;
+  }
 }
 
 //Home page
@@ -115,7 +119,7 @@ body{
 
 .links-project{
   font-size: 1.4em;
-  margin: 5px;
+  margin: 5px 50px 5px 5px;
   text-decoration: none;
   color: black;
   font-family: 'Figgins Bold';
@@ -189,6 +193,24 @@ body{
   height: 350px;
   -webkit-filter: drop-shadow( 4px 4px 0px black);
   filter: drop-shadow( 4px 4px 0px black);
+}
+
+//Page d'Erreur
+.Error-page{
+  background-color: white;
+  min-height: 75vh;
+  padding: 0px 200px 0px 200px;
+}
+
+.error-txt{
+  color: black;
+  padding-top: 200px;
+  margin: 0;
+}
+
+.img-error{
+  height: 100px;
+  margin: 100px;
 }
 
 //Footer

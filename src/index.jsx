@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from 'pages/Home';
 import About from 'pages/About';
 import Works from 'pages/Works';
+import Error from 'pages/Error';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
 import BtnTheme from 'components/BtnTheme';
@@ -36,6 +37,9 @@ const App = () => {
               </Route>
               <Route path="/about">
                 <About />
+              </Route>
+              <Route path="/error">
+                <Error />
               </Route>
             </Switch>
           </main>
