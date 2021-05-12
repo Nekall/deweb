@@ -1,14 +1,115 @@
 body{
   font-family: 'Figgins';
   margin: 0;
+  padding: 0;
 }
 
-.logo-react {
-  width: 35px;
-  margin-right: 25px;
+//Typing effect
+.typing-demo {
+  font-family: monospace;
+  font-weight: bold;
+  width: 5ch;
+  animation: typing 1.5s steps(5), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 3em;
+  margin: 30px 0px -30px 40px;
 }
 
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+//Navbar
 .navbar {
-  background-color: grey;
+  height: 150px;
+  background-color: white;
   padding: 10px;
+}
+
+.links-navbar {
+  float: right;
+}
+
+.link-nav{
+  color: black;
+  font-family: 'Figgins Bold';
+  text-decoration: none;
+  border: 1px solid black;
+  box-shadow: 4px 4px 0px black;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+}
+
+//Home page
+.HomePage{
+  min-height: 100vh;
+  padding: 0px 200px 0px 200px;
+}
+
+.home-section1{
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.home-s1-text1{
+  padding: 20px;
+}
+
+.home-s1-img1{
+  padding: 20px;
+}
+
+.img-coding{
+  padding-left: 150px;
+  padding-top: 25px;
+  height: 270px;
+  -webkit-filter: drop-shadow( 4px 4px 0px black);
+  filter: drop-shadow( 4px 4px 0px black);
+}
+
+//Works page
+.WorksPage{
+  min-height: 100vh;
+  padding: 0px 200px 0px 200px;
+}
+
+//About page
+.AboutPage{
+  min-height: 100vh;
+  padding: 0px 200px 0px 200px;
+}
+
+.about-section1{
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.about-s1-text1{
+  padding: 20px;
+}
+
+.about-s1-img1{
+  padding: 20px;
+}
+
+.img-team{
+  padding-left: 100px;
+  padding-top: 25px;
+  height: 300px;
+  -webkit-filter: drop-shadow( 4px 4px 0px black);
+  filter: drop-shadow( 4px 4px 0px black);
 }
