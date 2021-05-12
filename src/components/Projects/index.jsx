@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import React, {useState, useEffect} from "react";
 import studyCase from '../../data/study-case.js';
+import DisplayProject from 'components/DisplayProject';
 
 const Projects = () => {
   let { projectSlug } = useParams();
@@ -13,9 +14,7 @@ const Projects = () => {
 
   return(
     <div>
-      {currentProject === undefined ? <p>Can't view this infos</p> : <p>{currentProject.companyName}</p>}
-      {currentProject === undefined ? <p>Can't view this infos</p> : <p>{currentProject.title}</p>}
-      {currentProject === undefined ? <p>Can't view this infos</p> : <p>{currentProject.story}</p>}
+      {currentProject === undefined ? "" : <DisplayProject companyName={currentProject.companyName} title={currentProject.title} story={currentProject.story}/>}
     </div>
   )
 };

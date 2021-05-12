@@ -1,0 +1,95 @@
+$bg-grey: #131417;
+$lightgrey: #1e1f26;
+
+//Typing effect
+.typing-demo.dark{
+  color: white;
+}
+
+//Navbar
+.navbar.dark{
+  background-color: $bg-grey;
+}
+
+.link-nav.dark{
+  color: white;
+  border: 1px solid white;
+  box-shadow: 4px 4px 0px white;
+}
+
+//Home page
+.HomePage.dark{
+  background-color: $bg-grey;
+}
+
+.home-section1.dark{
+  color: white;
+}
+
+.home-s1-text1.dark{
+  color: white;
+}
+
+.img-coding.dark{
+  -webkit-filter: drop-shadow( 4px 4px 0px white);
+  filter: drop-shadow( 4px 4px 0px white);
+}
+
+//Works page
+.WorksPage.dark{
+  background-color: $bg-grey;
+}
+
+.links-project.dark{
+  color: white;
+}
+
+.img-work.dark{
+  height: 400px;
+  border: 1px solid white;
+  box-shadow: 4px 4px 0px white;
+}
+
+.work-cName.dark{
+  color: white;
+}
+
+.work-title.dark{
+  color: white;
+}
+
+.work-story.dark{
+  color: white;
+}
+
+.hr-work.dark{
+  border: 1px solid white;
+}
+
+//About page
+.AboutPage.dark{
+  background-color: $bg-grey;
+}
+
+.about-section1.dark{
+  color: white;
+}
+
+.about-s1-text1.dark{
+  color: white;
+}
+
+.img-team.dark{
+  -webkit-filter: drop-shadow( 4px 4px 0px white);
+  filter: drop-shadow( 4px 4px 0px white);
+}
+
+
+//Footer
+.Footer.dark{
+  background-color: $bg-grey;
+}
+
+.footer-txt.dark{
+  color: white;
+}

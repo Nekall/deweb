@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import {ThemeContext} from '../../context/ThemeContext'
+import {ThemeContext} from '../../context/ThemeContext';
 import sunLogo from 'assets/images/sun.svg';
 import moonLogo from 'assets/images/moon.svg';
 
@@ -10,7 +10,7 @@ export default function BtnTheme(){
   return(
       <div>
         <div className="btn-dn" onClick={toggleTheme} >
-          <img className="img-dn" src={theme ? moonLogo : sunLogo} alt="icon light dark mode"/>
+          <img className="img-dn" src={theme ? sunLogo : moonLogo} alt="icon light dark mode"/>
         </div>
       </div>
   )

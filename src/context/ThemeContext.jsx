@@ -3,12 +3,16 @@ import React, {createContext, useState} from 'react';
 export const ThemeContext = createContext();
 
 const ThemeContextProvider = (props) =>  {
+  let saveTheme = localStorage.getItem('saveTheme')
 
-  const [theme, setTheme] = useState(true)
+   saveTheme === null ? saveTheme = true : saveTheme = JSON.parse(saveTheme);
 
-  const toggleTheme = () => {
-    setTheme(!theme)
-  }
+   let [theme, setTheme] = useState(saveTheme);
+
+   const toggleTheme = () => {
+     setTheme(!theme);
+     localStorage.setItem('saveTheme', JSON.stringify(!theme));
+   }
 
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}>

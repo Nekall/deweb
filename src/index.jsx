@@ -3,6 +3,7 @@ import './sass/fonts.scss';
 import './sass/style.scss';
 import './sass/toolbox.scss';
 import './sass/btn-theme.scss';
+import './sass/dark-style.scss';
 //React Imports
 import React from "react";
 import ReactDOM from 'react-dom';
@@ -18,7 +19,6 @@ import ThemeContextProvider from 'context/ThemeContext';
 
 
 const App = () => {
-
 
   return (
     <div className="App">
