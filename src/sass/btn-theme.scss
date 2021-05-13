@@ -10,3 +10,9 @@
 .img-dn{
   height: 75px;
 }
+
+@media only screen and (max-width: 600px){
+  .btn-dn{
+    right: 147px;
+  }
+}

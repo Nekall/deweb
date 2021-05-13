@@ -1,3 +1,4 @@
+import './style.scss';
 import { Switch, Route, Link } from 'react-router-dom';
 import Projects from 'components/Projects';
 import React, { useContext } from 'react';

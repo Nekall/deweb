@@ -4,6 +4,22 @@ body{
   padding: 0;
 }
 
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+  .typing-demo {
+    margin: 30px 0px -85px 10px !important;
+  }
+
+  .links-navbar {
+    display: grid;
+  }
+}
+
+
 //Typing effect
 .typing-demo {
   color: black;
@@ -42,6 +58,7 @@ body{
 }
 
 .link-nav{
+  display: initial;
   color: black;
   font-family: 'Figgins Bold';
   font-size: 1.4em;
@@ -52,166 +69,11 @@ body{
   margin: 10px;
   transition: 0.2s;
   &:active{
+    margin: 10px 8px 10px 10px !important;
     box-shadow: 1px 1px 0px black;
   }
 }
 
-//Home page
-.HomePage{
-  background-color: white;
-  min-height: 90vh;
-  padding: 0px 200px 0px 200px;
-}
-
-.home-section1{
-  padding-top: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-}
-
-.home-s1-text1{
-  color: black;
-  padding: 20px;
-}
-
-.home-s1-img1{
-  padding: 20px;
-}
-
-.img-coding{
-  padding-left: 150px;
-  padding-top: 25px;
-  height: 270px;
-  -webkit-filter: drop-shadow( 4px 4px 0px black);
-  filter: drop-shadow( 4px 4px 0px black);
-}
-
-//Works page
-.WorksPage{
-  background-color: white;
-  min-height: 90vh;
-  padding: 0px 200px 0px 200px;
-}
-
-.img-list{
-  height: 30px;
-}
-
-.img-card{
-  height: 30px;
-}
-
-.btn-lc{
-  background-color: white;
-  border: 1px solid black;
-  box-shadow: 4px 4px 0px black;
-  padding: 5px;
-}
-
-.btn-lc.active{
-  background-color: #bde0fe;
-}
-
-.works-section1{
-  padding: 20px 0px 20px 100px;
-}
-
-.links-project{
-  font-size: 1.4em;
-  margin: 5px 50px 5px 5px;
-  text-decoration: none;
-  color: black;
-  font-family: 'Figgins Bold';
-}
-
-.links-project:hover {
-  opacity: 0.4;
-}
-
-.fieldProject{
-  display: flex;
-  min-height: 75vh;
-  padding: 25px;
-}
-
-.img-work{
-  height: 400px;
-  border: 1px solid black;
-  box-shadow: 4px 4px 0px black;
-}
-
-.work-cName{
-  color: black;
-  margin: 40px;
-  font-family: 'Figgins Bold';
-  font-size: 2.6em;
-}
-
-.work-title{
-  color: black;
-  margin: 60px;
-  font-family: 'Figgins Bold';
-  font-size: 2em;
-}
-
-.work-story{
-  color: black;
-  margin-left: 90px;
-  font-family: 'Figgins Italic';
-  font-size: 1.4em;
-}
-
-.hr-work{
-  border: 1px solid black;
-}
-
-//About page
-.AboutPage{
-  min-height: 90vh;
-  padding: 0px 200px 0px 200px;
-}
-
-.about-section1{
-  padding-top: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-}
-
-.about-s1-text1{
-  padding: 20px;
-}
-
-.about-s1-img1{
-  padding: 20px;
-}
-
-.img-team{
-  padding-left: 100px;
-  padding-top: 25px;
-  height: 350px;
-  -webkit-filter: drop-shadow( 4px 4px 0px black);
-  filter: drop-shadow( 4px 4px 0px black);
-}
-
-//Page d'Erreur
-.Error-page{
-  background-color: white;
-  min-height: 75vh;
-  padding: 0px 200px 0px 200px;
-}
-
-.error-txt{
-  color: black;
-  padding-top: 200px;
-  margin: 0;
-}
-
-.img-error{
-  height: 100px;
-  margin: 100px;
-}
 
 //Footer
 .Footer{

@@ -1,3 +1,4 @@
+import './style.scss';
 import teamImage from 'assets/images/team-deweb.jpg';
 import React, { useContext } from 'react';
 import {ThemeContext} from '../../context/ThemeContext';
